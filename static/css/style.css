@@ -1,0 +1,217 @@
+/* Enhanced AI Mastery Hub Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.main-nav {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    padding: 20px 30px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.homepage p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #6b7280;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+h2 {
+    color: #1e293b;
+    margin: 40px 0 25px 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #059669;
+    margin: 25px 0 15px 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 25px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    margin: 15px 0;
+    padding: 12px 20px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #e2e8f0;
+    font-size: 1.1rem;
+}
+
+li strong {
+    color: #2563eb;
+}
+
+.learning-paths {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.path {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.path:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.path h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.path p {
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+
+.path.beginner-content {
+    background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+    border-left: 5px solid #059669;
+}
+
+.path.beginner-content:hover {
+    border-color: #059669;
+    background: linear-gradient(135deg, #dcfce7, #ecfdf5);
+}
+
+.path.intermediate-content {
+    background: linear-gradient(135deg, #fffbeb, #fef3c7);
+    border-left: 5px solid #d97706;
+}
+
+.path.intermediate-content:hover {
+    border-color: #d97706;
+    background: linear-gradient(135deg, #fef3c7, #fffbeb);
+}
+
+.path.advanced-content {
+    background: linear-gradient(135deg, #f3e8ff, #faf5ff);
+    border-left: 5px solid #7c3aed;
+}
+
+.path.advanced-content:hover {
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, #e9d5ff, #f3e8ff);
+}
+
+.path a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.path a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+a[href*="sample"] {
+    display: inline-block;
+    margin: 30px 0;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #059669, #047857);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+a[href*="sample"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .learning-paths {
+        grid-template-columns: 1fr;
+    }
+}
