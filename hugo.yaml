@@ -1,0 +1,46 @@
+﻿baseURL: 'https://darrinmc.github.io/ai-education-hub'
+languageCode: 'en-us'
+title: 'AI Mastery Hub - Business AI Education by Darrin'
+
+publishDir: 'docs'
+canonifyURLs: true
+
+params:
+  author: "Darrin MC"
+  description: "Learn AI for business success - from beginner basics to advanced strategy"
+  
+  content_distribution:
+    beginner_target: 40
+    intermediate_target: 35
+    advanced_target: 25
+  
+  github:
+    repo: 'https://github.com/darrinmc/ai-education-hub'
+    edit_page: true
+    branch: 'main'
+
+menu:
+  main:
+    - name: "🌱 Beginner"
+      url: "/beginner/"
+      weight: 10
+    - name: "🛠️ Intermediate" 
+      url: "/intermediate/"
+      weight: 20
+    - name: "🧠 Advanced"
+      url: "/advanced/"
+      weight: 30
+
+taxonomies:
+  audience: 'audiences'
+  category: 'categories' 
+  tag: 'tags'
+  series: 'series'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: github
+    lineNos: true

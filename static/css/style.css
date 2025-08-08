@@ -1,0 +1,45 @@
+﻿/* AI Mastery Hub - Professional CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #2563eb;
+  --success-green: #059669;
+  --warning-orange: #d97706;
+  --expert-purple: #7c3aed;
+  --neutral-gray: #6b7280;
+  --light-bg: #f8fafc;
+  --dark-text: #1e293b;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: var(--dark-text);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-blue), var(--expert-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+
+.beginner-content { border-left: 5px solid var(--success-green); padding: 20px; }
+.intermediate-content { border-left: 5px solid var(--warning-orange); padding: 20px; }
+.advanced-content { border-left: 5px solid var(--expert-purple); padding: 20px; }
