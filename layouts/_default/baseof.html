@@ -1,14 +1,24 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
+        <nav class="main-nav">
+            <a href="/">🏠 Home</a>
+            <a href="/beginner/">🌱 Beginner</a>
+            <a href="/intermediate/">🛠️ Intermediate</a>
+            <a href="/advanced/">🧠 Advanced</a>
+        </nav>
+        
+        <main>
+            {{ block "main" . }}{{ .Content }}{{ end }}
+        </main>
     </div>
 </body>
 </html>

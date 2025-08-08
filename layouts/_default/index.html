@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="homepage">
+    <header class="hero">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Description }}</p>
+    </header>
+    
+    <div class="content">
+        {{ .Content }}
+    </div>
+    
+    <div class="learning-paths">
+        <div class="path beginner-content">
+            <h3>🌱 Beginner Path</h3>
+            <p>Perfect for business owners new to AI</p>
+            <a href="/beginner/">Start Learning →</a>
+        </div>
+        
+        <div class="path intermediate-content">
+            <h3>🛠️ Intermediate Path</h3>
+            <p>Ready to implement AI solutions</p>
+            <a href="/intermediate/">View Content →</a>
+        </div>
+        
+        <div class="path advanced-content">
+            <h3>🧠 Advanced Path</h3>
+            <p>Strategic insights for transformation</p>
+            <a href="/advanced/">Expert Level →</a>
+        </div>
+    </div>
+</div>
+{{ end }}
