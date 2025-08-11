@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    <div class="meta">
+        <p>Audience: {{ .Params.audience }}</p>
+        <p>Date: <time>{{ .Date.Format "2006-01-02" }}</time></p>
+    </div>
+    {{ .Content }}
+</article>
+{{ end }}
