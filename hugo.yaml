@@ -1,10 +1,8 @@
-﻿baseURL: 'https://darrinmc.github.io/ai-education-hub'
+baseURL: 'https://darrinmc1.github.io/ai-education-hub'  # Fixed username
 languageCode: 'en-us'
 title: 'AI Mastery Hub - Business AI Education by Darrin'
-
-publishDir: 'docs'
+# publishDir: 'docs'  # Remove this line to use default 'public'
 canonifyURLs: true
-
 params:
   author: "Darrin MC"
   description: "Learn AI for business success - from beginner basics to advanced strategy"
@@ -15,10 +13,9 @@ params:
     advanced_target: 25
   
   github:
-    repo: 'https://github.com/darrinmc/ai-education-hub'
+    repo: 'https://github.com/darrinmc1/ai-education-hub'  # Also fix this URL
     edit_page: true
     branch: 'main'
-
 menu:
   main:
     - name: "🌱 Beginner"
@@ -30,13 +27,11 @@ menu:
     - name: "🧠 Advanced"
       url: "/advanced/"
       weight: 30
-
 taxonomies:
   audience: 'audiences'
   category: 'categories' 
   tag: 'tags'
   series: 'series'
-
 markup:
   goldmark:
     renderer:
